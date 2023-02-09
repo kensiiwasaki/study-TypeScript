@@ -1,6 +1,14 @@
 import type { NextPage } from 'next'
 
-console.log(typeof null)
+// console.log(typeof null)
+
+// プリミティブ型
+const str = 'abc'
+// ラッパーオブジェクトに入れる
+const strObject = new String(str)
+// オブジェクトのように扱う
+strObject.length // フィールドの参照
+strObject.toUpperCase() // メソッド呼び出し
 
 // const obj = { a: 1 }
 // obj.a = 2
