@@ -1,5 +1,10 @@
 import type { NextPage } from 'next'
 
+// リテラル型
+let x: 1
+x = 1
+// x = 100　// xに1以外の値を入れるとエラーになる
+
 // // ボックス化
 // // プリミティブ型
 // const str = 'abc'
