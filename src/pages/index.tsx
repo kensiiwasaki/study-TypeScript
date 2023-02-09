@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 
+;(5).toString
+
 // const obj = { a: 1 }
 // obj.a = 2
 // console.log(obj)
