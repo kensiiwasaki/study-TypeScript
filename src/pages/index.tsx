@@ -28,7 +28,6 @@ obj = { a: 1 }
 // const nums = [1, 2]
 // nums.push(3)
 // console.log(nums)
-
 const nums: readonly number[] = [1, 2, 3]
 
 const Home: NextPage = () => {
