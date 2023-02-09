@@ -4,9 +4,9 @@ const obj = { a: 1 }
 obj.a = 2
 console.log(obj)
 
-const num = [1, 2]
-num.push(3)
-console.log(num)
+const nums = [1, 2]
+nums.push(3)
+console.log(nums)
 
 const Home: NextPage = () => {
   return <div className="text-blue-500">Hello!</div>
