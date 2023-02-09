@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-;(5).toString
+console.log(typeof null)
 
 // const obj = { a: 1 }
 // obj.a = 2
