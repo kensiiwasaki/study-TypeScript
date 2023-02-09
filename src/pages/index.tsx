@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 
-// console.log(typeof null)
-
 // // ボックス化
 // // プリミティブ型
 // const str = 'abc'
