@@ -13,12 +13,12 @@ num = 3
 
 // // ボックス化
 // // プリミティブ型
-// const str = 'abc'
+const abc = 'abc'
 // // ラッパーオブジェクトに入れる
-// const strObject = new String(str)
+const strObject = new String(abc)
 // // オブジェクトのように扱う
-// strObject.length // フィールドの参照
-// strObject.toUpperCase() // メソッド呼び出し
+strObject.length // フィールドの参照
+strObject.toUpperCase() // メソッド呼び出し
 
 // 自動ボックス化
 const str = 'abc'
