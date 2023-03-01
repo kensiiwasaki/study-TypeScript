@@ -5,6 +5,10 @@ const value1 = 123
 const value2 = 123
 console.log(value1 == value2) //true
 
+const object1 = { value: 123 }
+const object2 = { value: 123 }
+console.log(object1 == object2) //false
+
 // リテラル型
 let x: 1
 x = 1
