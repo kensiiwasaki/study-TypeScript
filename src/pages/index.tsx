@@ -1,5 +1,10 @@
 import type { NextPage } from 'next'
 
+// オブジェクト
+const value1 = 123
+const value2 = 123
+console.log(value1 == value2) //true
+
 // リテラル型
 let x: 1
 x = 1
