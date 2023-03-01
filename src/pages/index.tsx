@@ -1,5 +1,16 @@
 import type { NextPage } from 'next'
 
+// メソッドの型アノテーション
+let calculator: {
+  sum(x: number, y: number): number
+}
+
+calculator = {
+  sum(x, y) {
+    return x + y
+  },
+}
+
 // オブジェクトの型アノテーション (型エイリアス)
 type Box = { width: number; height: number }
 let box: Box = { width: 1080, height: 720 }
