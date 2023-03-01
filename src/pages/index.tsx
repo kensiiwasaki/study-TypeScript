@@ -2,6 +2,11 @@ import type { NextPage } from 'next'
 
 // オブジェクトの型アノテーション
 let box: { width: number; height: number }
+// 改行して書くことも可能
+// let box: {
+//   width: number
+//   height: number
+// }
 
 box = { width: 1080, height: 720 } // width,height共にnumber型でないとだめ
 
