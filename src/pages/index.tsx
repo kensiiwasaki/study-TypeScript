@@ -1,8 +1,13 @@
 import type { NextPage } from 'next'
 
 // メソッドの型アノテーション
+// let calculator: {
+//   sum(x: number, y: number): number
+// }
+
+// 関数構文の書き方もできる
 let calculator: {
-  sum(x: number, y: number): number
+  sum: (x: number, y: number) => number
 }
 
 calculator = {
