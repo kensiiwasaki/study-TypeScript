@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 
+// オブジェクトの型アノテーション
+
 // オブジェクト
 const value1 = 123
 const value2 = 123
