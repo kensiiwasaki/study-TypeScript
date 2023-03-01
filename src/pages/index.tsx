@@ -1,17 +1,21 @@
 import type { NextPage } from 'next'
 
-// オブジェクトの型アノテーション
-let box: { width: number; height: number }
+// オブジェクトの型アノテーション (型エイリアス)
+type Box = { width: number; height: number }
+let box: Box = { width: 1080, height: 720 }
+
+// オブジェクトの型アノテーション (インライン)
+let box1: { width: number; height: number }
 // 改行して書くことも可能
 // let box: {
 //   width: number
 //   height: number
 // }
 
-box = { width: 1080, height: 720 } // width,height共にnumber型でないとだめ
+box1 = { width: 1080, height: 720 } // width,height共にnumber型でないとだめ
 
-box = { width: '1080', height: 720 } // widthがnumber型じゃないのでエラー
-box = { width: 1080 } // heightがないのでエラー
+box1 = { width: '1080', height: 720 } // widthがnumber型じゃないのでエラー
+box1 = { width: 1080 } // heightがないのでエラー
 
 // オブジェクト
 const value1 = 123
