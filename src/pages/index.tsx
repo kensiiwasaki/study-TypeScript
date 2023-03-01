@@ -1,6 +1,12 @@
 import type { NextPage } from 'next'
 
 // オブジェクトの型アノテーション
+let box: { width: number; height: number }
+
+box = { width: 1080, height: 720 } // width,height共にnumber型でないとだめ
+
+box = { width: '1080', height: 720 } // widthがnumber型じゃないのでエラー
+box = { width: 1080 } // heightがないのでエラー
 
 // オブジェクト
 const value1 = 123
