@@ -1,5 +1,14 @@
 import type { NextPage } from 'next'
 
+// インデックス型
+let obj: {
+  [K: string]: number
+}
+
+obj = { a: 1, b: 2 }
+obj.c = 4
+obj['d'] = 5
+
 // メソッドの型アノテーション
 // let calculator: {
 //   sum(x: number, y: number): number
@@ -71,10 +80,10 @@ str.toUpperCase() // メソッド呼び出し
 // const obj = { a: 1 }
 // obj.a = 2
 // console.log(obj)
-let obj: {
+let obj1: {
   readonly a: number
 }
-obj = { a: 1 }
+obj1 = { a: 1 }
 
 // const nums = [1, 2]
 // nums.push(3)
