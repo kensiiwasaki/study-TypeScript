@@ -8,6 +8,7 @@ let obj: {
 obj = { a: 1, b: 2 }
 obj.c = 4
 obj['d'] = 5
+// obj.e = 'test' // これはできない
 
 // メソッドの型アノテーション
 // let calculator: {
