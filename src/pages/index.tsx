@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 // インデックス型
 let obj: {
-  [K: string]: number
+  [K: string]: number // Kは型変数なんでも良いがKかKeyにするのが一般的
 }
 
 obj = { a: 1, b: 2 }
