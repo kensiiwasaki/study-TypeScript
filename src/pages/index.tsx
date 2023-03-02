@@ -10,6 +10,11 @@ obj.c = 4
 obj['d'] = 5
 // obj.e = 'test' // これはできない
 
+// コンパイラーオプションのnoUncheckedIndexedAccessを有効にした場合,プロパティが存在しないときundefinedになる
+const obj2: { [K: string]: number } = { a: 1 }
+const b: number | undefined = obj2.b
+console.log(b) // undefined
+
 // メソッドの型アノテーション
 // let calculator: {
 //   sum(x: number, y: number): number
