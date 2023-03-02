@@ -15,6 +15,10 @@ const obj2: { [K: string]: number } = { a: 1 }
 const b: number | undefined = obj2.b
 console.log(b) // undefined
 
+// Record<K, T>ユーティリティ型でも表現できる、した二つは同じ意味
+let objA: { [K: string]: number }
+let objB: Record<string, number>
+
 // メソッドの型アノテーション
 // let calculator: {
 //   sum(x: number, y: number): number
