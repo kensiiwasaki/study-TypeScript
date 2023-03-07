@@ -11,12 +11,12 @@ num = 1
 num = 3
 // num = 5 // numに1,2,3以外の値はエラーになる
 
-// // ボックス化
-// // プリミティブ型
+// ボックス化
+// プリミティブ型
 const abc = 'abc'
-// // ラッパーオブジェクトに入れる
+// ラッパーオブジェクトに入れる
 const strObject = new String(abc)
-// // オブジェクトのように扱う
+// オブジェクトのように扱う
 strObject.length // フィールドの参照
 strObject.toUpperCase() // メソッド呼び出し
 
