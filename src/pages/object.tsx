@@ -1,5 +1,14 @@
 import type { NextPage } from 'next'
 
+// object、Object、{}の違い
+let a1: object
+let b1: Object
+let c1: {}
+// これらはオブジェクトならなんでも代入可能
+const a1: object = {} // OK
+const b1: Object = {} // OK
+const c1: {} = {} // OK
+
 // インデックス型
 let obj: {
   [K: string]: number // Kは型変数なんでも良いがKかKeyにするのが一般的
