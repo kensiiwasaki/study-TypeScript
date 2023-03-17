@@ -9,6 +9,14 @@ const a1: object = {} // OK
 const b1: Object = {} // OK
 const c1: {} = {} // OK
 
+// objectはオブジェクト型の値のみ代入できてプリミティブ型の値は代入できない
+let a: object
+a = { x: 1 } // OK
+a = [1, 2, 3] // OK。配列はオブジェクト
+a = /a-z/ // OK。正規表現はオブジェクト
+
+a = 1 // プリミティブ型はNG
+
 // インデックス型
 let obj: {
   [K: string]: number // Kは型変数なんでも良いがKかKeyにするのが一般的
