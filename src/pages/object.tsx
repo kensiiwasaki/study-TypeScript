@@ -10,6 +10,15 @@ const book2 = undefined
 const title2 = book2 === null || book2 === undefined ? undefined : book2.title
 console.log(title2)
 
+// オプショナルチェーン
+const book3 = undefined
+const title3 = book3?.title
+console.log(title3) // undefined
+// ネストも当然可能
+const book4 = { author: { email: 'alice@example.com' } }
+const authorEmail = book4?.author?.email
+console.log(authorEmail)
+
 // object、Object、{}の違い
 let a1: object
 let b1: Object
