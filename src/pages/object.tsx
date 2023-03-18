@@ -17,6 +17,16 @@ a = /a-z/ // OK。正規表現はオブジェクト
 
 a = 1 // プリミティブ型はNG
 
+let a2: Object
+a2 = {} // OK
+
+// ボックス化可能なプリミティブ型OK
+a2 = 1 // OK
+a2 = true // OK
+a2 = 'string' // OK
+
+a2 = null // nullとundefinedはNG
+
 // インデックス型
 let obj: {
   [K: string]: number // Kは型変数なんでも良いがKかKeyにするのが一般的
