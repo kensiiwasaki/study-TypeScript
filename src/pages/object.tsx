@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 
+// オプショナルチェーン
+
 // object、Object、{}の違い
 let a1: object
 let b1: Object
