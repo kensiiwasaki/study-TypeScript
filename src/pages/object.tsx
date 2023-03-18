@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 
 // オプショナルチェーン
+// null,undefinedのプロパティを参照するとエラーになる問題
+const book = undefined
+const title = book.title // ここでエラーになる
 
 // object、Object、{}の違い
 let a1: object
