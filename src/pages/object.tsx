@@ -27,6 +27,16 @@ a2 = 'string' // OK
 
 a2 = null // nullとundefinedはNG
 
+let a3: {}
+a3 = {} // OK
+
+// ボックス化可能なプリミティブ型OK
+a3 = 1 // OK
+a3 = true // OK
+a3 = 'string' // OK
+
+a3 = null // nullとundefinedはNG
+
 // インデックス型
 let obj: {
   [K: string]: number // Kは型変数なんでも良いがKかKeyにするのが一般的
