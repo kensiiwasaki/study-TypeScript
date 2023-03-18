@@ -20,6 +20,11 @@ const book4 = { author: { email: 'alice@example.com' } }
 const authorEmail = book4?.author?.email
 console.log(authorEmail)
 
+//  Null合体演算子と組み合わせる
+const book5 = undefined
+const title5 = book?.title ?? 'デフォルトタイトル'
+console.log(title5) // デフォルトタイトル
+
 // object、Object、{}の違い
 let a1: object
 let b1: Object
