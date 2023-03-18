@@ -11,7 +11,7 @@ const title2 = book2 === null || book2 === undefined ? undefined : book2.title
 console.log(title2)
 
 // オプショナルチェーン
-// 関数、メソッド、配列の参照もほぼ同じ同じように使用することができる
+// 関数、メソッド、配列の参照もほぼ同じように使用することができる
 const book3 = undefined
 const title3 = book3?.title
 console.log(title3) // undefined
