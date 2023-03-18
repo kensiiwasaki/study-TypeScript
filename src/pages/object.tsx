@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 // オプショナルチェーン
 // null,undefinedのプロパティを参照するとエラーになる問題
 const book1 = undefined
-const title1 = book.title // ここでエラーになる
+const title1 = book1.title // ここでエラーになる
 
 // 回避策(力技の条件分岐)
 const book2 = undefined
