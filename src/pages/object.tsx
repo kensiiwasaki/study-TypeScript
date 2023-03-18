@@ -22,7 +22,7 @@ console.log(authorEmail)
 
 //  Null合体演算子と組み合わせる
 const book5 = undefined
-const title5 = book?.title ?? 'デフォルトタイトル'
+const title5 = book5?.title ?? 'デフォルトタイトル'
 console.log(title5) // デフォルトタイトル
 
 // object、Object、{}の違い
