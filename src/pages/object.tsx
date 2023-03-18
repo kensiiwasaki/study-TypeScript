@@ -2,8 +2,13 @@ import type { NextPage } from 'next'
 
 // オプショナルチェーン
 // null,undefinedのプロパティを参照するとエラーになる問題
-const book = undefined
-const title = book.title // ここでエラーになる
+const book1 = undefined
+const title1 = book.title // ここでエラーになる
+
+// 回避策(力技の条件分岐)
+const book2 = undefined
+const title2 = book2 === null || book2 === undefined ? undefined : book2.title
+console.log(title2)
 
 // object、Object、{}の違い
 let a1: object
