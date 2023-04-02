@@ -11,3 +11,9 @@ array1 = [1, 2, 3]
 
 let array2: Array<number>
 array2 = [1, 2, 3]
+
+// JSのオブジェクトはオブジェクトなので比較やコピーの際は注意
+// 配列同士の比較
+const list1 = [1, 2, 3]
+const list2 = [1, 2, 3]
+console.log(list1 == list2) //この場合falseになる
