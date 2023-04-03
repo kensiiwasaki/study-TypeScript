@@ -26,3 +26,7 @@ character1.toUpperCase() // 問題なく実行される
 const character2: string = abc[100] // 存在しない要素にアクセスしてもエラーにならない
 character2.toUpperCase() // 実行したタイミングでエラーが出る
 // 上記はコンパイラオプションで解決できる
+
+// 読み取り専用の配列
+const nums1: readonly number[] = [1, 2, 3]
+const nums2: ReadonlyArray<number> = [1, 2, 3]
