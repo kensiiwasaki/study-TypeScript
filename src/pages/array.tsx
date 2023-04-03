@@ -22,4 +22,6 @@ console.log(list1 == list2) //この場合falseになる
 // 0番目の要素をstringにする
 const abc: string[] = ['a', 'b', 'c']
 const character1: string = abc[0]
+character1.toUpperCase() // 問題なく実行される
 const character2: string = abc[100] // 存在しない要素にアクセスしてもエラーにならない
+character2.toUpperCase() // 実行したタイミングでエラーが出る
