@@ -17,3 +17,8 @@ array2 = [1, 2, 3]
 const list1 = [1, 2, 3]
 const list2 = [1, 2, 3]
 console.log(list1 == list2) //この場合falseになる
+
+// 要素の型
+// 0番目の要素をstringにする
+const abc: string[] = ['a', 'b', 'c']
+const character: string = abc[0]
