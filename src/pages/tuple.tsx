@@ -16,3 +16,7 @@ function tuple2(): [number, string, boolean] {
 }
 
 const list2: [number, string, boolean] = tuple2()
+// タプルへのアクセス
+list2[0].toExponential()
+list2[1].length
+list2[2].valueOf()
