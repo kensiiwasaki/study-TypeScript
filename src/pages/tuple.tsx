@@ -20,3 +20,5 @@ const list2: [number, string, boolean] = tuple2()
 list2[0].toExponential()
 list2[1].length
 list2[2].valueOf()
+// タプルで受けた場合存在しない要素にはアクセスできない
+list2[5]
