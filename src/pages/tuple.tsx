@@ -24,4 +24,6 @@ list2[2].valueOf()
 list2[5]
 
 // 分割代入で受け取ることも可能
-const [num, str, bool]: [number, string, boolean] = tuple2()
+const [num, str, bool1]: [number, string, boolean] = tuple2()
+// このように書くと特定の戻り値だけ受け取ることも可能
+const [, , bool2]: [number, string, boolean] = tuple2()
