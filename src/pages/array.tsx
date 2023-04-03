@@ -38,3 +38,8 @@ const copy = [...original] // コピーを作る
 copy.reverse()
 console.log(original) // 破壊的操作の影響がない
 console.log(copy)
+
+// スプレッド構文
+const arr = [1, 2, 3]
+const arr2 = [4, 5, 6]
+const concated = [...arr, ...arr2]
