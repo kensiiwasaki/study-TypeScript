@@ -30,3 +30,11 @@ character2.toUpperCase() // 実行したタイミングでエラーが出る
 // 読み取り専用の配列
 const nums1: readonly number[] = [1, 2, 3]
 const nums2: ReadonlyArray<number> = [1, 2, 3]
+
+// 破壊的メソッドを安全に使う方法
+// スプレッド構文を使用する
+const original = [1, 2, 3]
+const copy = [...original] // コピーを作る
+copy.reverse()
+console.log(original) // 破壊的操作の影響がない
+console.log(copy)
