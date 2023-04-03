@@ -21,4 +21,5 @@ console.log(list1 == list2) //この場合falseになる
 // 要素の型
 // 0番目の要素をstringにする
 const abc: string[] = ['a', 'b', 'c']
-const character: string = abc[0]
+const character1: string = abc[0]
+const character2: string = abc[100] // 存在しない要素にアクセスしてもエラーにならない
