@@ -22,3 +22,6 @@ list2[1].length
 list2[2].valueOf()
 // タプルで受けた場合存在しない要素にはアクセスできない
 list2[5]
+
+// 分割代入で受け取ることも可能
+const [num, str, bool]: [number, string, boolean] = tuple2()
