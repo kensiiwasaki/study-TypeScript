@@ -5,5 +5,5 @@ type TwoDimensionalPoint = {
   x: number
   y: number
 }
-
+// そのため下記はエラーになる
 const twoDimensionalPoint: TwoDimensionalPoint = { x: 1 }
