@@ -21,7 +21,7 @@ type Never = string & number
 
 // インターセクション型よく使う使われ方
 // 肥大化したパラメータ
-type Parameter = {
+type Parameter1 = {
   id: string
   index?: number
   active: boolean
@@ -53,3 +53,5 @@ type Optional = Partial<{
   phoneNumber: string
   address: string
 }>
+// 必須パラメータとそうでないものが少しわかりやすくなる
+type Parameter2 = Mandatory & Optional
