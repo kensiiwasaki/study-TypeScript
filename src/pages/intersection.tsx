@@ -18,3 +18,38 @@ const p: ThreeDimensionalPoint = {
 
 // プリミティブ型のインターセクション型を作るとnever型になる
 type Never = string & number
+
+// インターセクション型よく使う使われ方
+// 肥大化したパラメータ
+type Parameter = {
+  id: string
+  index?: number
+  active: boolean
+  balance: number
+  photo?: string
+  age?: number
+  surname: string
+  givenName: string
+  company?: string
+  email: string
+  phoneNumber?: string
+  address?: string
+}
+// 必須と必須でないパラメータに分離
+// Required<T>,Partial<T>を使うと必須・必須でないを一括で明示的に示せる
+type Mandatory = Required<{
+  id: string
+  active: boolean
+  balance: number
+  surname: string
+  givenName: string
+  email: string
+}>
+type Optional = Partial<{
+  index: number
+  photo: string
+  age: number
+  company: string
+  phoneNumber: string
+  address: string
+}>
