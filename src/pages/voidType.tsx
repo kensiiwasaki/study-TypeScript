@@ -4,3 +4,8 @@ import type { NextPage } from 'next'
 function print(message: string): void {
   console.log(message)
 }
+
+// undefinedとvoidの違い
+// undefinedの時はreturnが必須
+// undefined型はvoid型に代入できるが、void型はundefined型に代入できない
+// voidはundefinedの上位型
