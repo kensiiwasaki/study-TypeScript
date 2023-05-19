@@ -18,3 +18,15 @@ const n: unknown = ''
 if (typeof n === 'string') {
   n.toUpperCase
 }
+
+// typeof null => "object"になるので注意が必要
+function isObject(value) {
+  return typeof value === 'object' // valueがnullになる場合を考慮していない
+}
+
+isObject(null) // 戻り値がtrueになってしまう
+
+// typeof nullを考慮した実装は以下
+function isObject(value) {
+  return value !== null && typeof value === 'object'
+}
