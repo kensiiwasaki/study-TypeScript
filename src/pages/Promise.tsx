@@ -71,3 +71,26 @@ request1()
     console.log(result3)
     // @log: 4
   })
+
+// Promiseとジェネリクス
+// Promiseの型を絵指定する場合はジェネリクスを伴いPromise<T>と書く
+// ジェネリクスの型を省略した場合はコンパイルエラーになる(型が合わない場合もコンパイルエラーになる)
+type User = {
+  name: string
+  age: number
+}
+
+function getUser(): Promise<User> {
+  return new Promise((resolve) => {
+    const user: User = {
+      name: '太郎',
+      age: 10,
+    }
+    resolve(user)
+  })
+}
+
+getUser().then((user: User) => {
+  console.log(user)
+  // @log: { "name": "太郎", "age": 10 }
+})
