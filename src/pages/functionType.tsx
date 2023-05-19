@@ -7,3 +7,10 @@ type Increment = (num: number) => number
 const increment1: Increment = (num: number): number => num + 1
 // 関数の型宣言を型注釈に使った場合、関数の実装側の引数と戻り値の型注釈は省略できる
 const increment2: Increment = (num) => num + 1
+
+// 関数から関数の型を宣言できる
+function increment3(num: number): number {
+  return num + 1
+}
+
+type Increment2 = typeof increment3
