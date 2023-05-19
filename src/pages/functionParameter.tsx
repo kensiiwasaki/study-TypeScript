@@ -7,3 +7,11 @@ function increment(n) {
 }
 increment(1, 2) // 引数が多い
 increment() // 引数が足りない
+
+// JSでは引数の型チェックも行わない
+// TSでは引数の型が一致しないとコンパイルエラーになる
+function len(str: string) {
+  return str.length
+}
+len('a') // OK
+len(1) // エラー
