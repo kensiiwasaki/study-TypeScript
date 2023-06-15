@@ -104,3 +104,15 @@ const promise2: Promise<string> = promise1.then((value) => `${value}`)
 const promise: Promise<boolean> = Promise.resolve('1')
   .then((value) => Number(value)) // Promise<number>型になる
   .then((value) => value > 0) // Promise<boolean>型になる
+
+// コールバック内で例外を投げるとそのPromiseは拒否される
+Promise.resolve(1)
+  .then(() => {
+    throw new Error()
+  })
+  .then(() => {
+    console.log('fulilled')
+  })
+  .catch(() => {
+    console.log('rejected')
+  }) // 'reject'
