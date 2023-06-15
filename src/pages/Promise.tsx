@@ -119,3 +119,5 @@ Promise.resolve(1)
   }) // 'reject'
 
 // 待ち受けた非同期処理の拒否の結果をコールバックで実行する
+const promise1: Promise<number> = Promise.reject(new Error())
+const promise2: Promise<string> = promise1.catch((e) => e.message)
