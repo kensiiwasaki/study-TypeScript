@@ -106,6 +106,7 @@ const promise: Promise<boolean> = Promise.resolve('1')
   .then((value) => value > 0) // Promise<boolean>型になる
 
 // コールバック内で例外を投げるとそのPromiseは拒否される
+// コールバック内で拒否されたPromiseを返しても同様
 Promise.resolve(1)
   .then(() => {
     throw new Error()
