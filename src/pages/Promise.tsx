@@ -121,3 +121,15 @@ Promise.resolve(1)
 // 待ち受けた非同期処理の拒否の結果をコールバックで実行する
 const promise1: Promise<number> = Promise.reject(new Error())
 const promise2: Promise<string> = promise1.catch((e) => e.message)
+
+// 大体の場合でthen()のあとにcatch()を書く
+Promise.resolve(1)
+  .then((num: number) => {
+    return `${num}`
+  })
+  .then((str: string) => {
+    return str.length > 1
+  })
+  .catch((e: any) => {
+    console.log(e.message)
+  })
