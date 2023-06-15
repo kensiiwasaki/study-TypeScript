@@ -96,3 +96,6 @@ getUser().then((user: User) => {
 })
 
 // Promiseのメソッド
+// 待ち受けた非同期処理の結果をコールバックで実行する
+const promise1: Promise<number> = Promise.resolve(1)
+const promise2: Promise<string> = promise1.then((value) => `${value}`)
