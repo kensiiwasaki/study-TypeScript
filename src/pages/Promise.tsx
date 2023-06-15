@@ -117,3 +117,5 @@ Promise.resolve(1)
   .catch(() => {
     console.log('rejected')
   }) // 'reject'
+
+// 待ち受けた非同期処理の拒否の結果をコールバックで実行する
