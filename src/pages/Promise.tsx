@@ -99,3 +99,8 @@ getUser().then((user: User) => {
 // 待ち受けた非同期処理の結果をコールバックで実行する
 const promise1: Promise<number> = Promise.resolve(1)
 const promise2: Promise<string> = promise1.then((value) => `${value}`)
+
+// then()でメソッドチェーンできる
+const promise: Promise<boolean> = Promise.resolve('1')
+  .then((value) => Number(value)) // Promise<number>型になる
+  .then((value) => value > 0) // Promise<boolean>型になる
