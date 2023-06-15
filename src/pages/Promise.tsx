@@ -133,3 +133,5 @@ Promise.resolve(1)
   .catch((e: any) => {
     console.log(e.message)
   })
+
+// 待ち受けた非同期処理が終了次第コールバックを実行する
