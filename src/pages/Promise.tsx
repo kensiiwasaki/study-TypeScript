@@ -178,3 +178,16 @@ const promise: Promise<number> = Promise.resolve(4)
 const promise: Promise<string> = Promise.reject(new Error('failed'))
 
 // Promiseを履行、拒否にかかわらずすべて待ち受ける
+function request1(): Promise<number> {
+  return Promise.resolve(1)
+}
+
+function request2(): Promise<number> {
+  return Promise.reject(new Error('failed'))
+}
+
+Promise.allSettled([request1(), request2()]).then((values) => {
+  console.log(values)
+  // @log: { status: "fulfilled", value: 1}, { status: "rejected", reason: {}}
+  // reason はエラーのオブジェクト
+})
