@@ -139,3 +139,31 @@ Promise.resolve(1)
 
 // Promiseの静的メソッド
 // 全ての非同期処理の結果を待ち受ける
+function request1(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(1)
+    }, 4000)
+  })
+}
+
+function request2(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(2)
+    }, 2000)
+  })
+}
+
+function request3(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(3)
+    }, 1000)
+  })
+}
+
+Promise.all([request1(), request2(), request3()]).then(([num1, num2, num3]) => {
+  console.log(num1, num2, num3)
+  // @log: 1, 2, 3
+})
