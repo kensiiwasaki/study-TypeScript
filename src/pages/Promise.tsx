@@ -173,3 +173,6 @@ Promise.all([request1(), request2(), request3()]).then(([num1, num2, num3]) => {
 
 // 履行されたPromiseを返す
 const promise: Promise<number> = Promise.resolve(4)
+
+// 拒否されたPromiseを返す
+const promise: Promise<string> = Promise.reject(new Error('failed'))
