@@ -169,3 +169,4 @@ Promise.all([request1(), request2(), request3()]).then(([num1, num2, num3]) => {
 })
 
 // 一つでも拒否された場合Promise.all()は拒否される
+// 拒否された場合は一番早く終わった例外がreturnされる
