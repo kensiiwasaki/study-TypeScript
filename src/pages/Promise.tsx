@@ -176,3 +176,5 @@ const promise: Promise<number> = Promise.resolve(4)
 
 // 拒否されたPromiseを返す
 const promise: Promise<string> = Promise.reject(new Error('failed'))
+
+// Promiseを履行、拒否にかかわらずすべて待ち受ける
