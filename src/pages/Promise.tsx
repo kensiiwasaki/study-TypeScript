@@ -167,3 +167,5 @@ Promise.all([request1(), request2(), request3()]).then(([num1, num2, num3]) => {
   console.log(num1, num2, num3)
   // @log: 1, 2, 3
 })
+
+// 一つでも拒否された場合Promise.all()は拒否される
