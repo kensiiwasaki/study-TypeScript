@@ -193,3 +193,31 @@ Promise.allSettled([request1(), request2()]).then((values) => {
 })
 
 // 一番初めに決定されたPromiseを返す
+function request1(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(1)
+    }, 4000)
+  })
+}
+
+function request2(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(2)
+    }, 2000)
+  })
+}
+
+function request3(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(3)
+    }, 1000)
+  })
+}
+
+Promise.race([request1(), request2(), request3()]).then((num) => {
+  console.log(num)
+  // @log: 3
+})
