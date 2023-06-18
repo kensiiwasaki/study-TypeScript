@@ -221,3 +221,5 @@ Promise.race([request1(), request2(), request3()]).then((num) => {
   console.log(num)
   // @log: 3
 })
+
+// Promise深掘り
