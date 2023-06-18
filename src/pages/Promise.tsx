@@ -191,3 +191,5 @@ Promise.allSettled([request1(), request2()]).then((values) => {
   // @log: { status: "fulfilled", value: 1}, { status: "rejected", reason: {}}
   // reason はエラーのオブジェクト
 })
+
+// 一番初めに決定されたPromiseを返す
