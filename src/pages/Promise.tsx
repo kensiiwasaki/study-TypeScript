@@ -225,3 +225,5 @@ Promise.race([request1(), request2(), request3()]).then((num) => {
 // Promise深掘り
 // Promiseの状態
 // Promiseには３つの状態がある -> pending、fulfilled、rejected
+
+// pending -> 待機中という意味で、待ち受けている非同期処理が完了していない時の状態を示す
