@@ -223,3 +223,4 @@ Promise.race([request1(), request2(), request3()]).then((num) => {
 })
 
 // Promise深掘り
+// Promiseの状態
