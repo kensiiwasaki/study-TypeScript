@@ -6,3 +6,5 @@ type Person = {
   name: string
 }
 type PersonKey = keyof Person
+
+// 2つ以上のプロパティがあるオブジェクトの型にkeyofを使った場合は、すべてのプロパティがユニオン型で返される
