@@ -21,3 +21,6 @@ type MapKeys = keyof MapLike
 
 // プロパティを持たないオブジェクトの型にkeyofを使うとnever型が返る
 type What = keyof {}
+
+// any型にkeyofを使うとstring | number | symbol型が返る
+type AnyKeys = keyof any
