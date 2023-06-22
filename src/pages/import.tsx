@@ -11,3 +11,6 @@ export const foo = 'foo'
 // exportつけた値だけが公開され、他のモジュールから参照できる
 // 他のモジュールから利用可能
 export const publicValue = 1
+
+// 外部からの利用不可
+const privateValue = 2
