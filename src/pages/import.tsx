@@ -21,3 +21,5 @@ foo = 1
 export const bar = foo
 
 // モジュールはimport時に一度だけ評価される
+
+// ES Modules
