@@ -31,3 +31,11 @@ import package2 from 'package2'
 // export default
 // 一つのファイルに一つのexport defaultしか許されていない
 export default (i) => i + 1
+
+// export
+// 書き方は２通りある
+// 一つめ
+export const increment = (i) => i + 1
+// 二つめ
+const increment = (i) => i + 1
+export { increment }
