@@ -23,3 +23,7 @@ export const bar = foo
 // モジュールはimport時に一度だけ評価される
 
 // ES Modules
+// import
+// 必ずファイルの一番上に書く必要がある。書き方は2通り存在する。
+import * as package1 from 'package1'
+import package2 from 'package2'
