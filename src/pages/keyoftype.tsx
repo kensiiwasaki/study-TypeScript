@@ -8,3 +8,9 @@ type Person = {
 type PersonKey = keyof Person
 
 // 2つ以上のプロパティがあるオブジェクトの型にkeyofを使った場合は、すべてのプロパティがユニオン型で返される
+type Book = {
+  title: string
+  price: number
+  rating: number
+}
+type BookKey = keyof Book // type BookKey = "title" | "price" | "rating";と同じ意味
