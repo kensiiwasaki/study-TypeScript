@@ -19,3 +19,5 @@ const privateValue = 2
 // 未定義の変数fooへの代入は不可
 foo = 1
 export const bar = foo
+
+// モジュールはimport時に一度だけ評価される
