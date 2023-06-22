@@ -15,6 +15,6 @@ type Book = {
 }
 type BookKey = keyof Book // type BookKey = "title" | "price" | "rating";と同じ意味
 
-// インデックス型にkeyofを使うと、インデックスキーの型が返ります。
+// インデックス型にkeyofを使うと、インデックスキーの型が返る
 type MapLike = { [K: string]: any }
 type MapKeys = keyof MapLike
