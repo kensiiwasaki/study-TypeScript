@@ -39,3 +39,6 @@ export const increment = (i) => i + 1
 // 二つめ
 const increment = (i) => i + 1
 export { increment }
+
+// import()
+// importはファイルの先頭に書く必要があり動的に読み込むファイルを切り替えられない
