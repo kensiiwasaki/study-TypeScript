@@ -14,3 +14,5 @@ export const publicValue = 1
 
 // 外部からの利用不可
 const privateValue = 2
+
+// モジュールは常にstrict-mode
