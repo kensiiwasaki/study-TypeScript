@@ -42,3 +42,4 @@ export { increment }
 
 // import()
 // importはファイルの先頭に書く必要があり動的に読み込むファイルを切り替えられない
+// そのための代替手段。import()は非同期で行われるため、Promiseを返す
