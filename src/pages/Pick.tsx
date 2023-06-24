@@ -19,3 +19,5 @@ type Person = {
   middleName?: string
   givenName: string
 }
+
+// 型が変わった際に１箇所の変更だけで良くなる
