@@ -14,3 +14,5 @@ type ReadonlyPerson = {
   readonly middleName?: string
   readonly givenName: string
 }
+
+// 再帰的ではない
