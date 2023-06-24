@@ -13,3 +13,9 @@ type User = {
   updatedAt: string
 }
 type Person = Pick<User, 'surname' | 'middleName' | 'givenName'>
+// 上と下は同じ意味になる
+type Person = {
+  surname: string
+  middleName?: string
+  givenName: string
+}
