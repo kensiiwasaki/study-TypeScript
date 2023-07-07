@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-
 // as constをつけることでプロパティをreadonlyにできる
 const pikachu = {
   name: 'pikachu',
