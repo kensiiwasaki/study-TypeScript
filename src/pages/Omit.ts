@@ -20,3 +20,7 @@ type Person = {
   middleName?: string
   givenName: string
 }
+
+// 下のように存在しない型を指定しても指摘してくれないので注意
+type Optional = 'createdat' | 'updatedat' | 'age' | 'address' | 'nationality'
+type Person = Omit<User, Optional>
