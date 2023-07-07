@@ -4,3 +4,5 @@
 // 例
 type Grade = 'A' | 'B' | 'C' | 'D' | 'E'
 type PassGrade = Exclude<Grade, 'E'>
+// 上と下は同じ意味
+type PassGrade = 'A' | 'B' | 'C' | 'D'
