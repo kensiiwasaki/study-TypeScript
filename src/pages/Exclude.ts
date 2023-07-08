@@ -10,3 +10,7 @@ type PassGrade = 'A' | 'B' | 'C' | 'D'
 type PassGrade = Exclude<Grade, 'D' | 'E'>
 
 // UはTの部分集合である必要はないので,タイポなどには注意しないといけない
+
+// 元のユニオンタイプに新たなタイプが追加された場合、Excludeの第2引数も変更しないといけない
+type PullRequestState = 'draft' | 'reviewed' | 'rejected' | 'testFailed'
+type MergeableState = Exclude<PullRequestState, 'draft' | 'rejected'>
