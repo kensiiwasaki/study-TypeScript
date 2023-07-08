@@ -23,3 +23,7 @@ type Readonly<T> = {
 }
 
 // Mapped Typesには追加のプロパティが書けない(インデックス型と異なる点)
+type KeyValuesAndName = {
+  [K in string]: string
+  //name: string これはできずエラーが出る
+}
