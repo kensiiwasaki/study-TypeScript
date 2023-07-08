@@ -29,3 +29,11 @@ type KeyValuesAndName = {
 }
 
 // 追加プロパティはその部分をオブジェクト型として定義した後にMapped Typesとインターセクション型を成す必要がある
+// 例
+type KeyValues = {
+  [K in string]: string
+}
+type Name = {
+  name: string // 追加のプロパティ
+}
+type KeyValuesAndName = KeyValues & Name
