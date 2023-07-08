@@ -6,3 +6,6 @@ type Grade = 'A' | 'B' | 'C' | 'D' | 'E'
 type FailGrade = Extract<Grade, 'D' | 'E'>
 // 上と下は同じ意味になる
 type FailGrade = 'D' | 'E'
+
+// 2つのユニオン型の共通部分を導き出すことにも使える
+type CommonTypes = Extract<'a' | 'b' | 'c', 'b' | 'c' | 'd'>
