@@ -18,3 +18,6 @@ const butterflies: Butterfly = {
 }
 
 // Readonly<T>もこの機能で実現されている
+type Readonly<T> = {
+  readonly [P in keyof T]: T[P]
+}
