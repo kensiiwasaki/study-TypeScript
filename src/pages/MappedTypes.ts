@@ -8,3 +8,11 @@ type SystemSupportLanguage = 'en' | 'fr' | 'it' | 'es'
 type Butterfly = {
   [key in SystemSupportLanguage]: string
 }
+// このようにdeが設定、使用できなくなる
+const butterflies: Butterfly = {
+  en: 'Butterfly',
+  fr: 'Papillon',
+  it: 'Farfalla',
+  es: 'Mariposa',
+  de: 'Schmetterling',
+}
