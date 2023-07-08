@@ -21,3 +21,5 @@ const butterflies: Butterfly = {
 type Readonly<T> = {
   readonly [P in keyof T]: T[P]
 }
+
+// Mapped Typesには追加のプロパティが書けない
