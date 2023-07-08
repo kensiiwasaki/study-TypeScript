@@ -27,3 +27,5 @@ type KeyValuesAndName = {
   [K in string]: string
   //name: string これはできずエラーが出る
 }
+
+// 追加プロパティはその部分をオブジェクト型として定義した後にMapped Typesとインターセクション型を成す必要がある
