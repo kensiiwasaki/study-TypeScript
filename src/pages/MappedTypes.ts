@@ -37,3 +37,9 @@ type Name = {
   name: string // 追加のプロパティ
 }
 type KeyValuesAndName = KeyValues & Name
+// 下のようにまとめることもできる
+type KeyValuesAndName = {
+  [K in string]: string
+} & {
+  name: string // 追加のプロパティ
+}
