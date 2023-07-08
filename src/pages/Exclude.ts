@@ -8,3 +8,5 @@ type PassGrade = Exclude<Grade, 'E'>
 type PassGrade = 'A' | 'B' | 'C' | 'D'
 // 第2引数をユニオン型にすると、複数の方を同時に取り除くこともできる
 type PassGrade = Exclude<Grade, 'D' | 'E'>
+
+// UはTの部分集合である必要はないので,タイポなどには注意しないといけない
