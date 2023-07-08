@@ -4,3 +4,5 @@
 // 例
 type Grade = 'A' | 'B' | 'C' | 'D' | 'E'
 type FailGrade = Extract<Grade, 'D' | 'E'>
+// 上と下は同じ意味になる
+type FailGrade = 'D' | 'E'
