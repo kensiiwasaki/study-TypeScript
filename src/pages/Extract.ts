@@ -9,3 +9,5 @@ type FailGrade = 'D' | 'E'
 
 // 2つのユニオン型の共通部分を導き出すことにも使える
 type CommonTypes = Extract<'a' | 'b' | 'c', 'b' | 'c' | 'd'>
+// 結果
+type CommonTypes = 'b' | 'c'
