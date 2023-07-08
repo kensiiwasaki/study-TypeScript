@@ -16,3 +16,5 @@ const butterflies: Butterfly = {
   es: 'Mariposa',
   de: 'Schmetterling',
 }
+
+// Readonly<T>もこの機能で実現されている
