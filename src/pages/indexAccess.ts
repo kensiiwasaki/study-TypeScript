@@ -3,4 +3,4 @@
 
 // 例
 type A = { foo: number }
-type Foo = A['foo']
+type Foo = A['foo'] // type Foo = number
