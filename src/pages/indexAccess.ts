@@ -8,4 +8,4 @@ type Foo = A['foo'] // type Foo = number
 // ユニオン型にも使える
 // 例
 type Person = { name: string; age: number }
-type T = Person['name' | 'age']
+type T = Person['name' | 'age'] // type T = string | number
