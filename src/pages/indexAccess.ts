@@ -9,3 +9,5 @@ type Foo = A['foo'] // type Foo = number
 // 例
 type Person = { name: string; age: number }
 type T = Person['name' | 'age'] // type T = string | number
+
+// keyofと組み合わせると全プロパティの型がユニオン型で得られる
