@@ -11,3 +11,6 @@ type Person = { name: string; age: number }
 type T = Person['name' | 'age'] // type T = string | number
 
 // keyofと組み合わせると全プロパティの型がユニオン型で得られる
+// 例
+type Foo = { a: number; b: string; c: boolean }
+type T = Foo[keyof Foo]
